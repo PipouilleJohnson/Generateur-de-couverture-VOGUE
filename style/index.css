@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "suprema-reg";
+    src: url(../suprema/Suprema\ Regular.ttf);
+}
+
+html, body{
+    margin: 0;
+    font-family: "suprema-reg";
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+
+.image-background{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 2200px;
+    object-fit: cover;
+    object-position: 0 -800px;
+    justify-content: start;
+}
+
+.logo-vogue-head{
+    margin: 100px auto;
+    width: 180px;
+    z-index: 2;
+}
+
+.container-un{
+    height:100%;
+    width: 100%;
+    margin: auto;
+    padding: 100px, 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.bloc-action{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 80%;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 95%);
+    z-index: 1;
+}
+
+.bloc-action-container{
+    margin: auto;
+    width: 80%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bloc-action-container h2{
+    margin: auto;
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+    font-size: 75px;
+}
+
+.bloc-action p{
+    margin: 50px auto;
+    width: 90%;
+    text-align: center;
+}
+
+.bloc-boutons{
+    margin: auto;
+    padding: 10px;
+}
+
+.bloc-boutons button{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    stroke: 0px;
+    border: 0;
+    border-radius: 40px;
+    background-color: #1f1f1f;
+}
+
+
+/* ----------- Bloc deux */
+
+
+.bloc-action-deux{
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    width: 80%;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 95%);
+    z-index: 1;
+}
+
+.bloc-action-deux-container{
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bloc-action-deux-titre{
+    width: 100%;
+    justify-content: start;
+}
+
+.bloc-action-deux-titre h3{
+    text-align: start;
+    font-size: 45px;
+}
+
+
+.bloc-action-deux-interieur{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partie-gauche{
+    width: 50%;
+}
+
+.partie-droite{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-vogue{
+    width: 400px;
+}
+
+.bulle-un{
+    width: 80px;
+    top: 120%;
+    left: 65%;
+    opacity: 60%;
+    position: absolute;
+}
+
+.bulle-deux{
+    width: 150px;
+    top: 175%;
+    left: 65%;
+    opacity: 60%;
+    position: absolute;
+}
+
+.bulle-trois{
+    width: 250px;
+    top: 1000px;
+    right: 260px;
+    opacity: 60%;
+    position: absolute;
+}
+
+@media screen and (max-width: 900px){
+    .bloc-action-container h2{
+        font-size: 40px;
+    }
+
+    .bloc-action-deux-titre h3{
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .bloc-action-deux-interieur{
+        flex-direction: column;
+    }
+
+    .partie-gauche{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .bulle-un{
+        width: 80px;
+        top: 120%;
+        left: 65%;
+        opacity: 60%;
+        position: absolute;
+    }
+    
+    .bulle-deux{
+        width: 150px;
+        top: 175%;
+        left: 65%;
+        opacity: 60%;
+        position: absolute;
+    }
+    
+    .bulle-trois{
+        width: 250px;
+        top: 1000px;
+        right: 260px;
+        opacity: 60%;
+        position: absolute;
+    }
+
+
+}
