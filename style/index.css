@@ -20,7 +20,6 @@ html, body{
     height: 2200px;
     object-fit: cover;
     object-position: 0 -800px;
-    opacity: 50%;
     justify-content: center;
 
 }
@@ -52,7 +51,7 @@ html, body{
     padding: 50px;
     width: 80%;
     border-radius: 30px;
-    background-color: rgba(255, 255, 255, 95%);
+    background-color: rgba(255, 255, 255, 0.95%);
     z-index: 1;
 }
 
