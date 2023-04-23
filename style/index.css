@@ -20,7 +20,8 @@ html, body{
     height: 2200px;
     object-fit: cover;
     object-position: 0 -800px;
-    opacity: 50;
+    opacity: 50%;
+    justify-content: center;
 
 }
 
