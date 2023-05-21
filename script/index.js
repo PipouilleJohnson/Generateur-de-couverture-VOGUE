@@ -222,6 +222,32 @@ boutonAbhaya.addEventListener("click", ()=>{
     renduTexte.style.fontFamily = "abhaya-reg"; 
 })
 
+
+// couleur du texte
+const couleurTexte = document.getElementById("color-texte");
+
+couleurTexte.addEventListener("input", function() {
+    // Récupération de la valeur sélectionnée
+    renduTexte.style.color = couleurTexte.value;})
+
+
+// Uppercase du texte
+const uppercaseTexte = document.getElementById("uppercase");
+
+let uppercaseActif = false;
+
+uppercaseTexte.addEventListener("click", function(){
+    if (uppercaseActif){
+        uppercaseActif = false;
+        renduTexte.style.textTransform = "initial";
+    }
+
+    else {
+        uppercaseActif = true;
+        renduTexte.style.textTransform = "uppercase";
+    }
+})
+
 //taille du texte
 const texteTaille = document.getElementById("texte-taille");
 

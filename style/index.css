@@ -349,6 +349,10 @@ h3{
     visibility: hidden;
 }
 
+
+/* ppartie droite parametres */
+
+
 .partie-droite{
     display: flex;
     flex-direction: column;
@@ -423,7 +427,7 @@ h3{
 }
 
 .container-typo{
-    padding: 40px 0px;
+    margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -453,10 +457,40 @@ h3{
     cursor: pointer;
 }
 
+.container-color-uppercase{
+    margin: 20px 0;
+    display: flex;
+
+    align-items: center;
+}
+
+#color-texte{
+    border: none;
+    height: 60px;
+    width: 60px;
+}
+
+#uppercase{
+    margin: 0 40px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Arial Narrow Bold";
+}
+
 .container-taille-texte p{
     color: white;
     margin: 0;
 }
+
+
 
 #texte-taille{
     width: 50%;
