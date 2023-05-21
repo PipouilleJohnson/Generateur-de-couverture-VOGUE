@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Vogue générateur de magazine</title>
+</head>
+<body>
+
+    
+<div class="page-choix-background">
+
+    <div class="bloc-choix-background">
+        
+        <div class="container-choix-background">
+            <div class="bloc-rendu">
+
+                <div id="background-rendu">
+                    <img id="background-un" src="./assets/bg-aurore-boreale.jpg" alt="">
+                    <img id="background-deux" src="./assets/bg-bulles.jpg" alt="">
+                    <img id="background-trois" src="./assets/bg-peinture.jpg" alt="">
+                    <img id="background-quatre" src="./assets/bg-softmix.jpg" alt="">
+
+                    <img id="asset-un" src="./assets/diablotin.png" alt="">
+                    <img id="asset-deux" src="./assets/fleur.png" alt="">
+                    <img id="asset-trois" src="./assets/ressort-poilu.png" alt="">
+                    <img id="asset-quatre" src="./assets/microbes-mignons.png" alt="">
+
+                        <div id="titre-rendu"></div>
+                </div>
+
+                <!-- <div id="couleur-rendu">
+                </div> -->
+
+                
+                
+            </div>
+
+            <!-- Partie droite de la page -->
+    
+            <div class="partie-droite">
+
+                <h1>Choix du background</h1>
+
+                <div class="fond-bloc">
+                    <h3>Fonds</h3>
+                    <div class="fond-choix">
+
+                        <input type="color" id="color-picker">
+
+                        <div id="sans-fond"></div>
+                        <div id="choix-un"></div>
+                        <div id="choix-deux"></div>
+                        <div id="choix-trois"></div>
+                        <div id="choix-quatre"></div>
+                    </div>
+
+                    <div class="curseur-opacite">
+                        <p>Opacité</p>
+                        <input type="range" min="0" max="1" step="0.1" value="0.5" id="fond-opacite">
+                    </div>
+                    
+
+                </div>
+
+                <div class="assets-render">
+                    <h3>Elements</h3>
+                    <div class="fond-choix">
+                        <div id="sans-el"></div>
+                        <div id="el-un"></div>
+                        <div id="el-deux"></div>
+                        <div id="el-trois"></div>
+                        <div id="el-quatre"></div>
+                    </div>
+                </div>
+
+                <div class="texte-bloc">
+                    <h3>Tapez votre texte</h3>
+                    <textarea type="text" id="entre-texte" placeholder="Mettez votre titre"></textarea> 
+                    
+                    <div class="container-typo">
+                        <div id="typo-arial">Arial</div>
+                        <div id="typo-suprema">Suprema</div>
+                        <div id="typo-impact">Impact</div>
+                        <div id="typo-abhaya">Abhaya</div>
+                    </div>
+
+                    <div class="container-taille-texte">
+                        <p>Taille du texte</p>
+                        <input type="range" min="10" max="100" value="50" id="texte-taille">
+                    </div>
+                    
+
+                    
+                </div>
+
+        </div>
+        
+        </div>
+        
+    </div>
+    
+</div>
+    
+
+    <script src="./script/index.js"></script>
+
+    
+</body>
+</html>
