@@ -239,11 +239,15 @@ let uppercaseActif = false;
 uppercaseTexte.addEventListener("click", function(){
     if (uppercaseActif){
         uppercaseActif = false;
+        uppercaseTexte.style.backgroundColor = "rgba(0,0,0,0)";
+        uppercaseTexte.style.color = "white";
         renduTexte.style.textTransform = "initial";
     }
 
     else {
         uppercaseActif = true;
+        uppercaseTexte.style.backgroundColor = "white";
+        uppercaseTexte.style.color = "#1f1f1f";
         renduTexte.style.textTransform = "uppercase";
     }
 })
