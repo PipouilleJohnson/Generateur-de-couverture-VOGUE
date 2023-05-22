@@ -280,8 +280,8 @@ h3{
 }
 
 #logo-vogue-rendu{
-    width: 80%;
-    object-fit: cover;
+    width: 440px;
+    fill: bisque;
 }
 
 .bloc-rendu{
