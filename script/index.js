@@ -1,3 +1,6 @@
+
+
+// boutons background
 const blocRendu = document.querySelector(".bloc-rendu");
 const backgroundUn = document.querySelector("#background-un");
 const backgroundDeux = document.querySelector("#background-deux");
@@ -9,6 +12,29 @@ const choixUn = document.querySelector("#choix-un");
 const choixDeux = document.querySelector("#choix-deux");
 const choixTrois = document.querySelector("#choix-trois");
 const choixQuatre = document.querySelector("#choix-quatre");
+
+//Choix des éléments
+const sansEl = document.querySelector("#sans-el");
+const elUn = document.querySelector("#el-un");
+const elDeux = document.querySelector("#el-deux");
+const elTrois = document.querySelector("#el-trois");
+const elQuatre = document.querySelector("#el-quatre");
+
+const assetUn = document.querySelector("#asset-un");
+const assetDeux = document.querySelector("#asset-deux");
+const assetTrois = document.querySelector("#asset-trois");
+const assetQuatre = document.querySelector("#asset-quatre");
+
+// boutons celebrites
+const zendaya = document.getElementById("zendaya");
+const liza = document.getElementById("liza");
+const doja = document.getElementById("doja");
+const duaLipa = document.getElementById("dua-lipa");
+
+const choixZendaya = document.getElementById("choix-zendaya");
+const choixLiza = document.getElementById("choix-liza");
+const choixDoja = document.getElementById("choix-doja");
+const choixDuaLipa = document.getElementById("choix-dua-lipa");
 
 sansFond.addEventListener("click", ()=>{
 
@@ -75,17 +101,7 @@ choixQuatre.addEventListener("click", ()=>{
     backgroundQuatre.style.visibility = "visible";   
 })
 
-//Choix des éléments
-const sansEl = document.querySelector("#sans-el");
-const elUn = document.querySelector("#el-un");
-const elDeux = document.querySelector("#el-deux");
-const elTrois = document.querySelector("#el-trois");
-const elQuatre = document.querySelector("#el-quatre");
 
-const assetUn = document.querySelector("#asset-un");
-const assetDeux = document.querySelector("#asset-deux");
-const assetTrois = document.querySelector("#asset-trois");
-const assetQuatre = document.querySelector("#asset-quatre");
 
 sansEl.addEventListener("click", ()=>{
 
@@ -151,6 +167,59 @@ elQuatre.addEventListener("click", ()=>{
     assetTrois.style.visibility = "hidden";
     assetQuatre.style.visibility = "visible";
 })
+
+choixZendaya.addEventListener("click", ()=>{
+
+    choixZendaya.style.border = "3px solid white";
+    choixLiza.style.border = "0px solid black";
+    choixDoja.style.border = "0px solid black";
+    choixDuaLipa.style.border = "0px solid black";
+
+    zendaya.style.visibility = "visible";
+    liza.style.visibility = "hidden";
+    doja.style.visibility = "hidden";
+    duaLipa.style.visibility = "hidden";
+})
+
+choixLiza.addEventListener("click", ()=>{
+
+    choixZendaya.style.border = "0px solid white";
+    choixLiza.style.border = "3px solid white";
+    choixDoja.style.border = "0px solid black";
+    choixDuaLipa.style.border = "0px solid black";
+
+    zendaya.style.visibility = "hidden";
+    liza.style.visibility = "visible";
+    doja.style.visibility = "hidden";
+    duaLipa.style.visibility = "hidden";
+})
+
+choixDoja.addEventListener("click", ()=>{
+
+    choixZendaya.style.border = "0px solid white";
+    choixLiza.style.border = "px solid black";
+    choixDoja.style.border = "3px solid white";
+    choixDuaLipa.style.border = "0px solid black";
+
+    zendaya.style.visibility = "hidden";
+    liza.style.visibility = "hidden";
+    doja.style.visibility = "visible";
+    duaLipa.style.visibility = "hidden";
+})
+
+choixDuaLipa.addEventListener("click", ()=>{
+
+    choixZendaya.style.border = "0px solid white";
+    choixLiza.style.border = "0px solid black";
+    choixDoja.style.border = "0px solid black";
+    choixDuaLipa.style.border = "3px solid white";
+
+    zendaya.style.visibility = "hidden";
+    liza.style.visibility = "hidden";
+    doja.style.visibility = "hidden";
+    duaLipa.style.visibility = "visible";
+})
+
 
 
 // color picker
@@ -257,4 +326,11 @@ const texteTaille = document.getElementById("texte-taille");
 
 texteTaille.addEventListener("input", function(){
     renduTexte.style.fontSize = texteTaille.value + "px";
+})
+
+//Position du texte
+const textePosition = document.getElementById("texte-position");
+
+textePosition.addEventListener("input", function(){
+    renduTexte.style.top = textePosition.value + "px";
 })

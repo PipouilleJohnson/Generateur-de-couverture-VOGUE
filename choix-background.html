@@ -16,8 +16,14 @@
     <div class="bloc-choix-background">
         
         <div class="container-choix-background">
+
+            <div class="titre-vogue-rendu">
+                <img id="logo-vogue-rendu" src="assets/VOGUE_LOGO.svg" alt="logo de VOGUE">
+            </div>
+
             <div class="bloc-rendu">
 
+                
                 <div id="background-rendu">
                     <img id="background-un" src="./assets/bg-aurore-boreale.jpg" alt="">
                     <img id="background-deux" src="./assets/bg-bulles.jpg" alt="">
@@ -29,8 +35,23 @@
                     <img id="asset-trois" src="./assets/ressort-poilu.png" alt="">
                     <img id="asset-quatre" src="./assets/microbes-mignons.png" alt="">
 
-                        <div id="titre-rendu"></div>
+                    <div class="images-celebrite">
+                        <img id="zendaya" src="./assets/Zendaya.png" alt="">
+                        <img id="liza" src="./assets/Lisa.png" alt="">
+                        <img id="doja" src="./assets/Doja-Cat.png" alt="">
+                        <img id="dua-lipa" src="./assets/Dua-Lipa.png" alt="">
+
+                        
+                    </div>
+
+                    <div id="titre-rendu"></div>
+                    
+
+
+                        
                 </div>
+
+                
 
                 <!-- <div id="couleur-rendu">
                 </div> -->
@@ -43,7 +64,7 @@
     
             <div class="partie-droite">
 
-                <h1>Choix du fond</h1>
+                <h1>Choisissez vos paramètres</h1>
 
                 <div class="fond-bloc">
                     <h3>Fonds</h3>
@@ -77,6 +98,16 @@
                     </div>
                 </div>
 
+                <div class="celebrite-render">
+                    <h3>Célébrité</h3>
+                    <div class="fond-choix">
+                        <div id="choix-zendaya"></div>
+                        <div id="choix-liza"></div>
+                        <div id="choix-doja"></div>
+                        <div id="choix-dua-lipa"></div>
+                    </div>
+                </div>
+
                 <div class="texte-bloc">
                     <h3>Tapez votre texte</h3>
                     <textarea type="text" id="entre-texte" placeholder="Mettez votre titre"></textarea> 
@@ -98,9 +129,9 @@
                     <div class="container-taille-texte">
                         <p>Taille du texte</p>
                         <input type="range" min="10" max="100" value="50" id="texte-taille">
+                        <p>Position du texte</p>
+                        <input type="range" min="10" max="500" value="50" id="texte-position">
                     </div>
-                    
-
                     
                 </div>
 
@@ -114,6 +145,7 @@
     
 
     <script src="./script/index.js"></script>
+    <script src="./script/dessin.js"></script>
 
     
 </body>
