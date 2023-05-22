@@ -147,6 +147,52 @@
     <script src="./script/index.js"></script>
     <script src="./script/dessin.js"></script>
 
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" 
+        integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+
+    <script>
+
+        var screenShot = document.querySelector(".screenshot");
+
+        function screenX(){
+            var canvasPromise = html2canvas(document.querySelector(".container"), {
+                useCORS: true
+            });
+
+            canvasPromise.then((canvas)=>{
+                console.log(canvas);
+
+                document.body.appendChild(canvas);
+
+                var dataURL = canvas.toDataURL("image/png");
+                console.log(dataURL);
+
+                var img = new Image();
+                img.src = dataURL;
+                img.download = dataURL;
+
+                var a = document.createElement("a");
+                a.innerHTML = "Download your image";
+                a.target = "_blank";
+
+                a.href = img.src;
+
+                a.download = img.download;
+
+                document.body.appendChild(a);
+            })
+        }
+
+        screenShot.addEventListener("click",screenX);
+
+        
+
+    </script>
+
     
 </body>
 </html>
