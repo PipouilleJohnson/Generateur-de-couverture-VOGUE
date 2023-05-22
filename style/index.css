@@ -347,6 +347,7 @@ h3{
     height: 900px;
     width: 650px;
     visibility: visible;
+    
 }
 
 #asset-deux{
@@ -439,6 +440,11 @@ h3{
     color: #1f1f1f;
     background-color: white;
     border-radius: 50px;
+    cursor: pointer;
+}
+
+.bouton-rendu:hover{
+    background-color: rgb(189, 189, 189);
 }
 
 
@@ -503,7 +509,8 @@ h3{
     color: white;
     margin: 0px;
 }
-#fond-opacite{
+
+#fond-opacite, #asset-opacite{
     padding: 5px;
     width: 50%;
     height: 20px;

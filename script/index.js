@@ -1,5 +1,3 @@
-
-
 // boutons background
 const blocRendu = document.querySelector(".bloc-rendu");
 const backgroundUn = document.querySelector("#background-un");
@@ -35,6 +33,14 @@ const choixZendaya = document.getElementById("choix-zendaya");
 const choixLiza = document.getElementById("choix-liza");
 const choixDoja = document.getElementById("choix-doja");
 const choixDuaLipa = document.getElementById("choix-dua-lipa");
+
+//couleur du bouton vogue
+var logoVogue = document.getElementById("logo-vogue-rendu");
+
+
+
+
+
 
 sansFond.addEventListener("click", ()=>{
 
@@ -247,6 +253,19 @@ backgroundOpacity.addEventListener("input", function() {
     backgroundTrois.style.opacity = backgroundOpacity.value;
     backgroundQuatre.style.opacity = backgroundOpacity.value;
 })
+
+
+//opacité de l'asset
+const assetOpacity = document.getElementById("asset-opacite");
+
+assetOpacity.addEventListener("input", function() {
+
+    assetUn.style.opacity = assetOpacity.value;
+    assetDeux.style.opacity = assetOpacity.value;
+    assetTrois.style.opacity = assetOpacity.value;
+    assetQuatre.style.opacity = assetOpacity.value;
+})
+
 
 // Entrer le texte sur l'affiche 
 document.addEventListener('DOMContentLoaded', function(){
