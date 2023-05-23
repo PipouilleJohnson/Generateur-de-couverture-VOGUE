@@ -361,6 +361,26 @@ uppercaseTexte.addEventListener("click", function(){
     }
 })
 
+
+// alignement du texte
+const alignLeft = document.getElementById("align-left");
+const alignCenter = document.getElementById("align-center");
+const alignRight = document.getElementById("align-right");
+
+alignLeft.addEventListener("click", ()=>{
+    renduTexte.style.textAlign = "left";
+})
+
+alignCenter.addEventListener("click", ()=>{
+    renduTexte.style.textAlign = "center";
+})
+
+alignRight.addEventListener("click", ()=>{
+    renduTexte.style.textAlign = "right";
+})
+
+
+
 //taille du texte
 const texteTaille = document.getElementById("texte-taille");
 

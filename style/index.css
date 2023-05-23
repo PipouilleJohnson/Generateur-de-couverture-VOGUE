@@ -428,6 +428,7 @@ h3{
 
 #titre-rendu{
     margin: auto;
+    padding: 0 20px;
     position: absolute;
     text-align: center;
     word-break: break-word;
@@ -437,8 +438,7 @@ h3{
     font-size: 50px;
     text-shadow: 0 0 2px black;
     top: 400px;
-    
-    width: 650px;
+    width: 610px;
     z-index: 999;
 }
 
