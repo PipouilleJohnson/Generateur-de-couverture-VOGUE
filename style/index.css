@@ -636,6 +636,18 @@ h3{
     font-family: "Arial Narrow Bold";
 }
 
+.container-align-text{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#align-left img, #align-center img, #align-right img{
+    height: 50px;
+    cursor: pointer;
+}
+
 .container-taille-texte p{
     color: white;
     margin: 0;
