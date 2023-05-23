@@ -203,7 +203,7 @@ choixLiza.addEventListener("click", ()=>{
 choixDoja.addEventListener("click", ()=>{
 
     choixZendaya.style.border = "0px solid white";
-    choixLiza.style.border = "px solid black";
+    choixLiza.style.border = "0px solid black";
     choixDoja.style.border = "3px solid white";
     choixDuaLipa.style.border = "0px solid black";
 
@@ -226,7 +226,28 @@ choixDuaLipa.addEventListener("click", ()=>{
     duaLipa.style.visibility = "visible";
 })
 
+// choix du logo vogue
+const vogueNoir = document.getElementById("vogue-noir");
+const vogueBlanc = document.getElementById("vogue-blanc");
 
+const vogueLogoRenduNoir = document.getElementById("logo-vogue-rendu-noir");
+const vogueLogoRenduBlanc = document.getElementById("logo-vogue-rendu-blanc");
+
+vogueNoir.addEventListener("click", () =>{
+    vogueLogoRenduNoir.style.visibility = "visible";
+    vogueLogoRenduBlanc.style.visibility = "hidden";
+
+    vogueNoir.style.border = "3px solid white";
+    vogueBlanc.style.border = "0px solid white";
+})
+
+vogueBlanc.addEventListener("click", () =>{
+    vogueLogoRenduNoir.style.visibility = "hidden";
+    vogueLogoRenduBlanc.style.visibility = "visible";
+
+    vogueNoir.style.border = "0px solid white";
+    vogueBlanc.style.border = "3px solid white";
+})
 
 // color picker
 

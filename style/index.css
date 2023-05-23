@@ -411,11 +411,19 @@ h3{
     z-index: 997;
 }
 
-#logo-vogue-rendu{
-    color: #565656;
+#logo-vogue-rendu-noir{
     width: 650px;
     object-fit: cover;
-    fill: bisque;
+    visibility: visible;
+}
+
+#logo-vogue-rendu-blanc{
+    width: 650px;
+    object-fit: cover;
+    position: relative;
+    top: -175px;
+    visibility: hidden;
+
 }
 
 #titre-rendu{
@@ -495,6 +503,35 @@ h3{
 .celebrite-render{
     width: 100%;
     margin-bottom: 20px;
+}
+
+.vogue-couleur{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vogue-couleur img{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    cursor: pointer;
+    padding: 10px;
+    
+    
+}
+
+#vogue-noir{
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #9c9c9c;
+}
+
+#vogue-blanc{
+    border: 0px solid white;
+    border-radius: 5px;
 }
 
 .fond-choix{
